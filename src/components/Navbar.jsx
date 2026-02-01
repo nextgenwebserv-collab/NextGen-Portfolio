@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="font-bold text-lg tracking-wide">
-          <img src="/src/assets/Logo.png" alt="Logo" className="h-10 w-36" />
+          <img src="/Logo.png" alt="Logo" className="h-10 w-36" />
         </div>
 
         {/* Nav Links */}
