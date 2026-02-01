@@ -1,11 +1,11 @@
 export default function Testimonials() {
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-16 sm:py-24 overflow-hidden">
       {/* Gradient background */}
       <div className="absolute -top-0 -left-20 w-96 h-96 bg-green-300 rounded-full blur-3xl opacity-60"></div>
       <div className="absolute top-60 right-0 w-96 h-96 bg-lime-300 rounded-full blur-3xl opacity-60"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <span className="inline-flex items-center gap-2 border border-black/20 px-4 py-2 rounded-full text-sm mb-6 bg-white">
           💬 Testimonials
         </span>
@@ -14,13 +14,13 @@ export default function Testimonials() {
           Client <span className="bg-black text-white px-3 py-1 rounded-lg">Talking</span>
         </h2>
 
-        <p className="max-w-xl text-gray-700 mb-10">
+        <p className="max-w-xl text-gray-700 sm:mb-10">
           We start every client interaction with an in-depth discovery call where we get to know
           each other.
         </p>
 
         <div className="flex flex-col justify-center md:flex-row gap-8 items-center">
-          <div className="flex gap-4 mt-10">
+          <div className="flex gap-4 mt-6 sm:mt-10">
             <button className="w-10 h-10 rounded-full border border-black flex items-center justify-center">
               ←
             </button>
@@ -30,15 +30,11 @@ export default function Testimonials() {
           </div>
           {/* Avatar */}
           <div className="bg-white rounded-2xl p-6 shadow-lg">
-            <img
-              src="https://i.pravatar.cc/150"
-              alt="client"
-              className="w-40 h-40 rounded-full object-cover"
-            />
+            <img src="/avatar2.jpg" alt="client" className="w-40 h-40 rounded-full object-cover" />
           </div>
 
           {/* Testimonial card */}
-          <div className="bg-black text-white rounded-2xl p-8 max-w-md">
+          <div className="bg-black text-white rounded-2xl p-6 sm:p-8 max-w-md">
             <span className="text-xs text-gray-400 block mb-2">AUTODESK</span>
 
             <p className="text-sm text-gray-300 mb-6">

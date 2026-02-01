@@ -6,16 +6,16 @@ import WorkProcess from '../components/WorkProcess.jsx';
 import Testimonials from '../components/Testimonials.jsx';
 import Projects from '../components/Projects.jsx';
 import Footer from '../components/Footer.jsx';
+import About from '../components/About.jsx';
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Hero />
       <Skills />
-      <WorkProcess />
-
       <Testimonials />
-
+      <WorkProcess />
+      <About />
       <Projects />
       <Footer />
     </div>
