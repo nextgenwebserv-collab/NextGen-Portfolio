@@ -1,4 +1,4 @@
-# 🚀 NextGen Portfolio (Vite Edition)
+# 🚀 NextGen Portfolio
 
 Welcome to my professional portfolio! Yeh ek high-performance, modern, aur ultra-fast responsive portfolio website hai jise **Vite + React** ecosystem ka use karke rebuild kiya gaya hai.
 
@@ -26,6 +26,20 @@ NextGen Portfolio ka maqsad ek clean aur impactful user interface provide karna 
 ## 🚀 Getting Started
 
 1. **Clone the repository:**
+
    ```bash
    git clone [https://github.com/Nextgenwebserv-Collab/NextGen-Portfolio.git](https://github.com/Nextgenwebserv-Collab/NextGen-Portfolio.git)
    ```
+
+2. **Install packages:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run:**
+   ```bash
+   npm run dev
+   ```
+4. **Live Demo:**
+   🔗 https://nextgen-portfolio-three.vercel.app
