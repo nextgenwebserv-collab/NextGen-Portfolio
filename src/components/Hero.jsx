@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaPhone } from 'react-icons/fa';
 
 export default function Hero() {
   return (
-    <section className="relative  bg-white overflow-hidden pb-0 sm:pb-32">
+    <section className="relative bg-white overflow-hidden pb-0 sm:pb-32">
       {/* Gradient blobs */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-green-300 rounded-full blur-3xl opacity-60"></div>
       <div className="absolute top-40 right-0 w-56 sm:w-96 h-56 sm:h-96 bg-lime-300 rounded-full blur-3xl opacity-60"></div>
@@ -32,7 +32,7 @@ export default function Hero() {
               Building high-performance digital experiences for modern brands. NextGen is your
               trusted partner for strategy, design, and development.
             </p>
-            <button className="mt-2 sm:mt-8 flex items-center gap-2 border border-black pr-3 pl-1  py-2 rounded-full hover:bg-black hover:text-white transition duration-300 cursor-pointer">
+            <button className="mt-2 sm:mt-8 flex items-center gap-2 border border-black pr-2 sm:pr-3 pl-1 py-1 sm:py-2 rounded-full hover:bg-black hover:text-white transition duration-300 cursor-pointer text-sm sm:text-md">
               <FaPhone size={32} className="rotate-90 border py-1 rounded-full" />
               Schedule a Call
             </button>

@@ -1,8 +1,8 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-icons/fa';
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 pt-16 ">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-14">
+    <footer className="bg-black text-gray-300 pt-10 sm:pt-16 ">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-14">
         {/* Brand */}
         <div>
           <img src="/Logo2.png" alt="Logo" className="mb-5 w-44" />
@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800 mt-14 py-6 text-center text-sm">
+      <div className="border-t border-gray-800 mt-4 sm:mt-14 py-6 text-center text-sm">
         © {new Date().getFullYear()} NextGen — All rights reserved.
       </div>
     </footer>

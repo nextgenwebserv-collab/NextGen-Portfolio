@@ -9,7 +9,7 @@ export default function Skills() {
         <div className="absolute w-72 h-72 blur-3xl rounded-full" />
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start sm:items-center gap-10 mb-6 sm:mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-start sm:items-center gap-4 mb-6 sm:mb-16">
           <div className="text-white">
             <button className="border border-white px-4 py-2 rounded-full text-sm mb-6">
               Why Choose me
@@ -28,7 +28,7 @@ export default function Skills() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           <SkillCard
             title="HTML & CSS"
             icon={<FaHtml5 />}

@@ -7,9 +7,9 @@ export default function WorkProcess() {
           ⚙️ Work Process
         </span>
 
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">My Work Process</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12">My Work Process</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           <ProcessCard
             title="Discovery"
             tag="Discovery"
