@@ -28,7 +28,7 @@ NextGen Portfolio ka maqsad ek clean aur impactful user interface provide karna 
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/Nextgenwebserv-Collab/NextGen-Portfolio.git](https://github.com/Nextgenwebserv-Collab/NextGen-Portfolio.git)
+   git clone https://github.com/nextgenwebserv-collab/NextGen-Portfolio.git
    ```
 
 2. **Install packages:**
