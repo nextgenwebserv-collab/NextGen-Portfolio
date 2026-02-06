@@ -10,7 +10,7 @@ export default function Testimonials() {
           💬 Testimonials
         </span>
 
-        <h2 className="text-4xl font-bold mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
           Client <span className="bg-black text-white px-3 py-1 rounded-lg">Talking</span>
         </h2>
 

@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about" className="relative py-18 sm:py-24 overflow-hidden">
       {/* Gradient background */}
-      <div className="absolute -top-10 -left-20 w-96 h-96 bg-green-300 rounded-full blur-3xl opacity-60"></div>
+      <div className="absolute -top-0 -left-20 w-96 h-96 bg-green-300 rounded-full blur-3xl opacity-60"></div>
       <div className="absolute top-60 right-0 w-96 h-96 bg-lime-300 rounded-full blur-3xl opacity-60"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-16">
@@ -11,7 +11,7 @@ export default function About() {
         </span>
         <div className="flex flex-col md:flex-row gap-12 items-center justify-between">
           <div>
-            <h2 className="text-4xl font-bold mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8">
               Who <span className="bg-black text-white px-3 py-0.5 rounded-lg">We Are</span>
             </h2>
 

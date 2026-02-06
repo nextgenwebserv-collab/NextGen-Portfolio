@@ -22,7 +22,7 @@ export default function Hero() {
             <a href="https://www.instagram.com/nextgen_webservices/" target="_blank">
               <FaInstagram size={24} />
             </a>
-            <a href="#" className="mb-4">
+            <a href="https://x.com/nxtgen_services" className="mb-4">
               <FaTwitter size={24} />
             </a>
             <hr className="rotate-90" />

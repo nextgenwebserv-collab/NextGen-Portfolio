@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <section className="text-white px-2 sm:px-8 pb-16">
+    <section className="text-white px-2 sm:px-8">
       <div className="max-w-7xl mx-auto bg-black p-10 sm:p-16 rounded-[36px]">
         {/* Badge */}
         <div className="flex flex-col items-center">

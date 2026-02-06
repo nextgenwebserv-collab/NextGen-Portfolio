@@ -7,6 +7,7 @@ import Testimonials from '../components/Testimonials.jsx';
 import Projects from '../components/Projects.jsx';
 import Footer from '../components/Footer.jsx';
 import About from '../components/About.jsx';
+import Contact from '../components/Contact.jsx';
 export default function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Home() {
       <WorkProcess />
       <About />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );
