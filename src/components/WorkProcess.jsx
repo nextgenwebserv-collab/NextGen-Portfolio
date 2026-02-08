@@ -52,7 +52,7 @@ function ProcessCard({ title, desc, tag, color }) {
 
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
 
-      <p className="text-gray-400 text-sm sm:mb-6">{desc}</p>
+      <p className="text-gray-400 text-sm">{desc}</p>
     </div>
   );
 }
