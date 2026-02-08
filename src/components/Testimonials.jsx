@@ -1,3 +1,5 @@
+import { ArrowRight, ArrowLeft } from 'lucide-react';
+
 export default function Testimonials() {
   return (
     <section className="relative py-16 sm:py-24 overflow-hidden">
@@ -22,10 +24,10 @@ export default function Testimonials() {
         <div className="flex flex-col justify-center md:flex-row gap-8 items-center">
           <div className="flex gap-4 mt-6 sm:mt-10">
             <button className="w-10 h-10 rounded-full border border-black flex items-center justify-center">
-              ←
+              <ArrowLeft size={18} />
             </button>
             <button className="w-10 h-10 rounded-full border border-black flex items-center justify-center">
-              →
+              <ArrowRight size={18} />
             </button>
           </div>
           {/* Avatar */}

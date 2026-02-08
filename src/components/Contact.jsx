@@ -10,7 +10,13 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const sendEmail = e => {
     e.preventDefault();
+
     if (!formRef.current) return;
+
+    if (formRef.current.email.value === 'nextgenwebserv@gmail.com') {
+      toast.error('Please check your email.');
+      return;
+    }
 
     setLoading(true);
 

@@ -1,6 +1,6 @@
 export default function WorkProcess() {
   return (
-    <section className=" text-white px-2 sm:px-8 sm:pt-8">
+    <section className=" text-white px-2 sm:px-8">
       <div className="max-w-7xl mx-auto p-6 sm:p-16 bg-black rounded-[32px] bg-gradient-to-bl from-black via-zinc-900 to-black">
         <div className="absolute  w-72 h-72 blur-3xl rounded-full " />
         <span className="inline-flex items-center gap-2 border border-white/20 px-4 py-2 rounded-full text-sm mb-6">
@@ -32,8 +32,7 @@ export default function WorkProcess() {
             title="Build"
             tag="Build"
             color="bg-yellow-400"
-            desc="We build fast, scalable, and reliable digital solutions using modern technologies.
-Our focus is on performance, security, and long-term growth."
+            desc="We build fast, scalable, and reliable digital solutions using modern technologies. Our focus is on performance, security, and long-term growth."
           />
         </div>
       </div>
@@ -43,15 +42,13 @@ Our focus is on performance, security, and long-term growth."
 
 function ProcessCard({ title, desc, tag, color }) {
   return (
-    <div className="bg-zinc-900 rounded-2xl p-6 relative hover:-translate-y-1 transition">
+    <div className="bg-zinc-900 rounded-2xl p-6 relative hover:-translate-y-2 transition duration-300">
       <span
         className={`inline-block ${color} text-black text-xs font-semibold px-3 py-1 rounded-full mb-4`}
       >
         {tag}
       </span>
-
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
-
       <p className="text-gray-400 text-sm">{desc}</p>
     </div>
   );
