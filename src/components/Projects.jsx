@@ -34,7 +34,7 @@ export default function Projects() {
             tags={['web development', 'e-commerce']}
             rotate="rotate-6"
             image="/Capture.png"
-            link="https://www.shopustore.in/"
+            link="https://shopu-nu.vercel.app/"
           />
 
           <ProjectCard
