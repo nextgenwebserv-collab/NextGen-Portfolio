@@ -16,7 +16,7 @@ export default function Projects() {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="flex md:flex-row flex-col gap-10 md:overflow-x-auto md:scroll-smooth md:pb-4 no-scrollbar">
           <ProjectCard
             title="Upskills"
             subtitle="Learning Management System"
@@ -41,10 +41,20 @@ export default function Projects() {
             title="CareOne"
             subtitle="Hospital Management System"
             details="CareOne is a comprehensive hospital management system designed to streamline operations, improve patient care, and enhance administrative efficiency."
-            tags={['Hospital management', 'web development']}
+            tags={['hospital management', 'web development']}
             rotate="-rotate-6"
             image="/Careone.png"
             link="https://careone.com"
+          />
+
+          <ProjectCard
+            title="SchooLama"
+            subtitle="ERP Software"
+            details="A School Management ERP is a software system designed to manage and automate all the daily operations of a school, including student records, attendance, fee management, examinations, and staff details in a single platform."
+            tags={['web development', 'ERP System']}
+            rotate="rotate-6"
+            image="/Lama.png"
+            link="https://erp-iota-five.vercel.app/admin"
           />
         </div>
       </div>
@@ -55,7 +65,7 @@ export default function Projects() {
 function ProjectCard({ title, subtitle, tags, rotate, image, details, link }) {
   return (
     <div
-      className={`bg-zinc-900 rounded-3xl px-4 py-2 transform ${rotate} hover:rotate-0 transition duration-500`}
+      className={`bg-zinc-900 rounded-3xl px-4 py-2 transform ${rotate} hover:rotate-0 transition duration-500 md:min-w-[300px] md:max-w-[300px]`}
     >
       {/* Tags */}
       <div className="flex gap-2 mb-4 flex-wrap">
