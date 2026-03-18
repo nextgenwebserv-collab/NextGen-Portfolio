@@ -24,7 +24,7 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <a
-          href="https://wa.me/6205453451?text=Hello%20I%20want%20to%20start%20a%20project"
+          href="https://wa.me/+916205453451?text=Hello%20I%20want%20to%20start%20a%20project"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 border border-black px-3 sm:px-5 py-2 rounded-full text-md hover:bg-black hover:text-white transition w-fit"
