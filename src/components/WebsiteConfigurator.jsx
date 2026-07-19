@@ -494,7 +494,9 @@ export default function WebsiteConfigurator() {
   const [step, setStep] = useState(1);
   const sectionRef = useRef(null);
   const [selectedCategory, setSelectedCategory] = useState('Restaurant');
+
   const [selectedFeatures, setSelectedFeatures] = useState([]);
+
   const currentCategory = categoryFeatures[selectedCategory];
   const [business, setBusiness] = useState('');
   const [name, setName] = useState('');
@@ -635,8 +637,8 @@ ${requirements}
                     setStep(2);
                     setTimeout(() => {
                       sectionRef.current?.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
+                        behavior: 'smooth',
+                        block: 'start',
                       });
                     }, 50);
                   }}
@@ -882,7 +884,16 @@ ${requirements}
 
                       <div className="flex gap-4 mt-8">
                         <button
-                          onClick={() => setStep(1)}
+                          onClick={() => {
+                            setStep(1);
+
+                            setTimeout(() => {
+                              sectionRef.current?.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start',
+                              });
+                            }, 50);
+                          }}
                           className="flex-1 py-3 rounded-xl border border-zinc-700 hover:border-white transition flex items-center justify-center gap-2"
                         >
                           <ArrowLeft size={18} />
@@ -890,7 +901,15 @@ ${requirements}
                         </button>
 
                         <button
-                          onClick={() => setStep(3)}
+                          onClick={() => {
+                            setStep(3);
+                            setTimeout(() => {
+                              sectionRef.current?.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start',
+                              });
+                            }, 50);
+                          }}
                           className="flex-1 py-3 rounded-xl bg-green-400 text-black font-semibold hover:scale-105 transition flex items-center justify-center gap-2"
                         >
                           Continue
@@ -990,7 +1009,15 @@ ${requirements}
 
                   <div className="flex gap-4 mt-10">
                     <button
-                      onClick={() => setStep(2)}
+                      onClick={() => {
+                        setStep(2);
+                        setTimeout(() => {
+                          sectionRef.current?.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                          });
+                        }, 50);
+                      }}
                       className="flex-1 py-4 rounded-xl border border-zinc-700 hover:border-white transition"
                     >
                       ← Back
