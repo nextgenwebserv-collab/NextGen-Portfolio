@@ -493,17 +493,8 @@ const addOnFeatureIcons = {
 export default function WebsiteConfigurator() {
   const [step, setStep] = useState(1);
   const sectionRef = useRef(null);
-
-  useEffect(() => {
-    sectionRef.current?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }, [step]);
   const [selectedCategory, setSelectedCategory] = useState('Restaurant');
-
   const [selectedFeatures, setSelectedFeatures] = useState([]);
-
   const currentCategory = categoryFeatures[selectedCategory];
   const [business, setBusiness] = useState('');
   const [name, setName] = useState('');
@@ -642,6 +633,12 @@ ${requirements}
                   onClick={() => {
                     setSelectedFeatures([]);
                     setStep(2);
+                    setTimeout(() => {
+                      sectionRef.current?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      });
+                    }, 50);
                   }}
                   className="px-4 sm:px-8 py-2 sm:py-4 rounded-xl bg-green-400 text-black font-semibold flex items-center gap-2 hover:scale-105 transition"
                 >
