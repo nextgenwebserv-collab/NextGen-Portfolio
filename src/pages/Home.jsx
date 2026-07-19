@@ -16,9 +16,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Skills />
-      <Testimonials />
-      <WorkProcess />
       <WebsiteConfigurator />
+      <Testimonials />
+
+      <WorkProcess />
+
       <About />
       <Projects />
       <Contact />

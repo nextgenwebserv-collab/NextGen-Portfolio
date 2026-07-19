@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-i
 export default function Footer() {
   return (
     <footer className="bg-black text-gray-300 pt-10 sm:pt-16 ">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-14">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
           <img src="/Logo2.png" alt="Logo" className="mb-5 w-44" />

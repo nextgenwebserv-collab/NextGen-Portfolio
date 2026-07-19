@@ -1,10 +1,12 @@
+import { Settings } from 'lucide-react';
 export default function WorkProcess() {
   return (
     <section className=" text-white px-2 sm:px-8">
       <div className="max-w-7xl mx-auto p-6 sm:p-16 bg-black rounded-[32px] bg-gradient-to-bl from-black via-zinc-900 to-black">
         <div className="absolute  w-72 h-72 blur-3xl rounded-full " />
         <span className="inline-flex items-center gap-2 border border-white/20 px-4 py-2 rounded-full text-sm mb-6">
-          ⚙️ Work Process
+          <Settings size={16} className="text-white" />
+          Work Process
         </span>
 
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12">My Work Process</h2>

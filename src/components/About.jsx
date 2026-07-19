@@ -9,8 +9,8 @@ export default function About() {
         <span className="inline-flex items-center gap-2 border border-black/20 px-4 py-2 rounded-full text-sm mb-6 bg-white">
           About NextGen
         </span>
-        <div className="flex flex-col md:flex-row gap-12 items-center justify-between">
-          <div>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+          <div className="flex-1">
             <h2 className="text-3xl sm:text-4xl font-bold mb-8">
               Who <span className="bg-black text-white px-3 py-0.5 rounded-lg">We Are</span>
             </h2>
@@ -29,7 +29,7 @@ export default function About() {
           </div>
 
           {/* Content Card */}
-          <div className="bg-black text-white rounded-2xl p-6 sm:p-10 max-w-lg">
+          <div className="flex-1 bg-black text-white rounded-2xl p-6 sm:p-10 max-w-lg">
             <p className="text-sm text-gray-200 mb-6">
               We specialize in designing and developing modern websites using the latest
               technologies like React, Next.js, and Tailwind CSS. Our approach blends strategy,
