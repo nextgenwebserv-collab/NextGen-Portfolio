@@ -11,7 +11,7 @@ export default function WorkProcess() {
         </div>
 
         {/* Glass Container */}
-        <div className=" relative rounded-[32px] border border-violet-500/20 bg-white/10 backdrop-blur-2xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] p-6 sm:p-16 overflow-hidden">
+        <div className=" relative rounded-[32px] border border-violet-500/10 bg-white/10 backdrop-blur-2xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] p-6 sm:p-16 overflow-hidden">
           {/* Header */}
           <div className="mb-14">
             <div

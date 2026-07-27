@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative bg-white overflow-hidden pb-0 sm:pb-32 pt-4 sm:pt-18">
       {/* Gradient blobs */}
 
-      <div className="absolute top-40 left-1/2 -translate-x-1/2 w-60 sm:w-96 h-60 sm:h-96 bg-violet-500/60 rounded-full blur-[100px] opacity-80"></div>
+      <div className="absolute top-50 left-1/2 -translate-x-1/2 w-60 sm:w-96 h-60 sm:h-96 bg-violet-500/60 rounded-full blur-[100px] opacity-80"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-16 py-16 sm:pt-24">

@@ -39,15 +39,15 @@ export default function Navbar() {
       <div
         className={`
     mx-auto flex items-center justify-between
-    px-5 py-3.5
+    px-5 py-2
     transition-all duration-700
     ease-[cubic-bezier(0.22,1,0.36,1)]
     transform
 
     ${
       scrolled
-        ? 'max-w-5xl rounded-full bg-white/80 backdrop-blur-3xl shadow-md border border-black/10 scale-[0.98]'
-        : 'max-w-7xl bg-white/80 border-b border-black/10 rounded-none scale-100'
+        ? 'max-w-5xl rounded-full bg-white/50 backdrop-blur-xl shadow-sm border border-black/10 scale-[0.98]'
+        : 'w-full bg-white/80 border-b border-black/5 rounded-none scale-100'
     }
   `}
       >

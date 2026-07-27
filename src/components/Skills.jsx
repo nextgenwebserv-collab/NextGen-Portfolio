@@ -7,12 +7,12 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto relative overflow-hidden rounded-[32px]">
         {/* Background Glow */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/2 top-10 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/20 blur-[180px]" />
-          <div className="absolute -bottom-20 right-0 w-80 h-80 rounded-full bg-fuchsia-500/10 blur-[140px]" />
+          <div className="absolute left-1/2 top-10 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/30 blur-[180px]" />
+
         </div>
 
         {/* Glass Container */}
-        <div className="relative rounded-[32px] border border-violet-500/40 bg-white/10 backdrop-blur-2xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] p-6 sm:p-16 overflow-hidden">
+        <div className="relative rounded-[32px] border border-violet-500/10 bg-white/40 backdrop-blur-xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] p-6 sm:p-16 overflow-hidden">
           {/* Header */}
           <div className="flex flex-col lg:flex-row justify-between gap-10 mb-14">
             <div>
@@ -69,7 +69,7 @@ export default function Skills() {
 
 function SkillCard({ title, icon, details }) {
   return (
-    <div className="group relative overflow-hidden rounded-3xl border bg-white/10 backdrop-blur-xl p-7 border-violet-500/20 transition-all duration-500 hover:-translate-y-3 hover:border-violet-400/40 hover:shadow-[0_20px_60px_rgba(168,85,247,0.18)]">
+    <div className="group relative overflow-hidden rounded-3xl border bg-white/40 backdrop-blur-xl p-7 border-violet-500/10 transition-all duration-500 hover:-translate-y-3 hover:border-violet-400/40 hover:shadow-[0_20px_60px_rgba(168,85,247,0.18)]">
       {/* Hover Glow */}
       <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-violet-500/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
@@ -85,7 +85,7 @@ function SkillCard({ title, icon, details }) {
       <p className="text-[15px] leading-7 text-gray-700">{details}</p>
 
       {/* Bottom Line */}
-      <div className="mt-8 h-[2px] w-0 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-500 group-hover:w-full" />
+      <div className="mt-4 h-[2px] w-0 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 transition-all duration-500 group-hover:w-full" />
     </div>
   );
 }

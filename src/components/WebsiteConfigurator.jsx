@@ -101,7 +101,7 @@ const categories = [
   {
     name: 'Landing Page',
     icon: PanelsTopLeft,
-    color: 'text-zinc-300',
+    color: 'text-gray-600',
     description: 'Perfect for Promotions',
   },
   {
@@ -555,8 +555,13 @@ ${requirements}
     );
   };
   return (
-    <section className="px-4 sm:px-8 pt-20 text-white" ref={sectionRef}>
-      <div className="max-w-7xl mx-auto rounded-[32px] bg-gradient-to-bl from-black via-zinc-900 to-black p-6 sm:p-16 overflow-hidden">
+    <section className="px-4 sm:px-8 pt-20 text-black bo" ref={sectionRef}>
+
+      <div className="max-w-7xl mx-auto rounded-[32px] border border-violet-500/10 bg-white/40 backdrop-blur-xl p-6 sm:p-16 overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute left-1/2 top-10 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/30 blur-[180px]" />
+
+        </div>
         <AnimatePresence mode="wait">
           {step === 1 && (
             <motion.div
@@ -574,7 +579,7 @@ ${requirements}
 
                 <h2 className="text-3xl sm:text-4xl font-bold">Choose Your Business Category</h2>
 
-                <p className="text-gray-400 mt-4 mb-14">
+                <p className="text-gray-700 mt-4 mb-14">
                   Select your business type and we'll build a modern website tailored to your needs.
                 </p>
               </div>
@@ -589,25 +594,24 @@ ${requirements}
                       onClick={() => setSelectedCategory(item.name)}
                       className={`relative rounded-2xl border p-4 sm:p-5 transition-all duration-300
 
-                      ${
-                        selectedCategory === item.name
-                          ? 'border-green-400 bg-zinc-800 shadow-xl shadow-green-400/30 scale-105'
-                          : 'border-zinc-800 bg-zinc-900 hover:border-green-400 hover:-translate-y-2'
-                      }`}
+                      ${selectedCategory === item.name
+                          ? '0 border border-violet-500/20 bg-white/50 backdrop-blur-xl shadow-xl shadow-violet-500/30 scale-105'
+                          : ' border border-violet-500/20 bg-white/50 backdrop-blur-xl hover:border-violet-500 hover:-translate-y-2'
+                        }`}
                     >
                       {selectedCategory === item.name && (
-                        <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-green-400 flex items-center justify-center text-black">
+                        <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-violet-500 flex items-center justify-center text-white">
                           <Check size={16} />
                         </div>
                       )}
 
-                      <div className="w-16 h-16 rounded-2xl bg-zinc-800 flex items-center justify-center mx-auto mb-5">
+                      <div className="w-16 h-16 rounded-2xl bg-white/30 flex items-center justify-center mx-auto mb-5">
                         <Icon size={32} className={item.color} />
                       </div>
 
                       <h3 className="font-semibold">{item.name}</h3>
 
-                      <p className="text-xs text-gray-400 mt-2">{item.description}</p>
+                      <p className="text-xs text-gray-800 mt-2">{item.description}</p>
                     </button>
                   );
                 })}
@@ -617,15 +621,15 @@ ${requirements}
 
               <div className="flex justify-between items-center mt-14">
                 <div className="text-left">
-                  <p className="text-sm text-gray-400">Selected Category</p>
+                  <p className="text-sm text-gray-700">Selected Category</p>
 
-                  <h3 className="text-xl sm:text-2xl font-bold text-green-400 mt-2">
+                  <h3 className="text-xl sm:text-2xl font-bold text-violet-500 mt-2">
                     {selectedCategory}
                   </h3>
 
-                  <p className="text-gray-500 mt-2">
+                  <p className="text-gray-700 mt-2">
                     Base Price :
-                    <span className="text-white font-semibold ml-2">
+                    <span className="text-black font-semibold ml-2">
                       ₹{categoryFeatures[selectedCategory].basePrice.toLocaleString()}
                     </span>
                   </p>
@@ -642,7 +646,7 @@ ${requirements}
                       });
                     }, 50);
                   }}
-                  className="px-4 sm:px-8 py-2 sm:py-4 rounded-xl bg-green-400 text-black font-semibold flex items-center gap-2 hover:scale-105 transition"
+                  className="px-4 sm:px-8 py-2 sm:py-4 rounded-xl bg-violet-500/80 text-white font-semibold flex items-center gap-2 hover:scale-105 transition"
                 >
                   Continue
                   <ArrowRight size={20} />
@@ -663,19 +667,19 @@ ${requirements}
                 <div className="lg:col-span-2">
                   <div className="flex items-center justify-between mb-6">
                     <div>
-                      <p className="text-green-400 text-sm mb-2">Selected Category</p>
+                      <p className="text-violet-400 text-sm mb-2">Selected Category</p>
 
                       <h2 className=" text-2xl sm:text-4xl font-bold">{selectedCategory}</h2>
 
-                      <p className="text-gray-400 mt-2">
+                      <p className="text-gray-700 mt-2">
                         Choose the features you want in your website.
                       </p>
                     </div>
 
-                    <div className="px-3 sm:px-5 py-2 rounded-xl bg-zinc-800 border border-zinc-700">
-                      <p className="text-sm text-gray-400">Base Price</p>
+                    <div className="px-3 sm:px-5 py-2 rounded-xl border border-violet-500/20 bg-white/70 backdrop-blur-xl">
+                      <p className="text-sm text-gray-700">Base Price</p>
 
-                      <h3 className="text-2xl font-bold text-green-400">
+                      <h3 className="text-2xl font-bold text-violet-400">
                         ₹{currentCategory.basePrice.toLocaleString()}
                       </h3>
                     </div>
@@ -690,14 +694,14 @@ ${requirements}
                         return (
                           <div
                             key={index}
-                            className="relative rounded-2xl border border-zinc-800 bg-zinc-900 p-2 sm:p-3"
+                            className="relative rounded-2xl border border-violet-500/20 bg-white/70 backdrop-blur-xl p-2 sm:p-3"
                           >
                             <div className="flex items-center gap-3">
-                              <div className="w-8 sm:w-9 h-8 sm:h-9 rounded-xl bg-green-500/10 flex items-center justify-center">
-                                <Icon className="w-5 h-5 text-green-400" />
+                              <div className="w-8 sm:w-9 h-8 sm:h-9 rounded-xl bg-violet-500/10 flex items-center justify-center">
+                                <Icon className="w-5 h-5 text-violet-400" />
                               </div>
 
-                              <span className="text-sm sm:text-md text-gray-300 font-medium">
+                              <span className="text-sm sm:text-md text-gray-700 font-medium">
                                 {item}
                               </span>
                             </div>
@@ -726,14 +730,13 @@ ${requirements}
                               setSelectedFeatures(prev => [...prev, feature]);
                             }
                           }}
-                          className={`relative rounded-2xl border p-4 text-left transition-all duration-300 ${
-                            active
-                              ? 'border-green-400 bg-zinc-800 shadow-lg shadow-green-400/20'
-                              : 'border-zinc-800 bg-zinc-900 hover:border-green-400 hover:-translate-y-1'
-                          }`}
+                          className={`relative rounded-2xl border p-4 text-left transition-all duration-300 ${active
+                              ? 'border-violet-500/20 bg-white/70 backdrop-blur-xl shadow-lg shadow-green-400/20'
+                              : 'border-violet-500/20 bg-white/70 backdrop-blur-xl hover:border-violet-500/20 hover:-translate-y-1'
+                            }`}
                         >
                           {active && (
-                            <div className="absolute top-3 right-3 h-6 w-6 rounded-full bg-green-400 text-black flex items-center justify-center">
+                            <div className="absolute top-3 right-3 h-6 w-6 rounded-full bg-violet-500 text-white flex items-center justify-center">
                               <Check size={16} />
                             </div>
                           )}
@@ -741,22 +744,21 @@ ${requirements}
                           <div className="flex items-center gap-3">
                             {/* Icon */}
                             <div
-                              className={`sm:w-11 sm:h-11 w-8 h-8 rounded-xl flex items-center justify-center transition-all ${
-                                active
-                                  ? 'bg-green-400 text-black'
-                                  : 'bg-green-500/10 text-green-400'
-                              }`}
+                              className={`sm:w-11 sm:h-11 w-8 h-8 rounded-xl flex items-center justify-center transition-all ${active
+                                  ? 'bg-violet-500 text-white'
+                                  : 'bg-violet-500/10 text-violet-400'
+                                }`}
                             >
                               <Icon className="sm:w-6 sm:h-6 w-5 h-5" />
                             </div>
 
                             {/* Content */}
                             <div className="flex-1">
-                              <h3 className="text-sm sm:text-base font-semibold text-white">
+                              <h3 className="text-sm sm:text-base font-medium text-gray-700">
                                 {feature.name}
                               </h3>
 
-                              <p className="mt-1 text-green-400 font-bold text-md sm:text-lg">
+                              <p className="mt-1 text-violet-500 font-bold text-md sm:text-lg">
                                 +₹{feature.price.toLocaleString()}
                               </p>
                             </div>
@@ -769,14 +771,14 @@ ${requirements}
 
                 <div>
                   <div className="lg:sticky lg:top-24">
-                    <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6">
+                    <div className="rounded-3xl border border-violet-500/20 bg-white/70 backdrop-blur-xl p-6">
                       <h3 className="text-2xl font-bold mb-6">Order Summary</h3>
 
                       {/* Selected Category */}
 
                       <div className="flex justify-between items-center border-b border-zinc-800 pb-2">
                         <div>
-                          <p className="text-gray-400 text-sm">Category</p>
+                          <p className="text-gray-700 text-sm">Category</p>
 
                           <h4 className="font-semibold mt-1">{selectedCategory}</h4>
                         </div>
@@ -794,8 +796,8 @@ ${requirements}
                             : currentCategory.includes.slice(0, 4)
                           ).map((item, index) => (
                             <div key={index} className="flex items-center gap-3">
-                              <Check size={16} className="text-green-400 flex-shrink-0" />
-                              <span className="text-sm text-gray-300">{item}</span>
+                              <Check size={16} className="text-violet-400 flex-shrink-0" />
+                              <span className="text-sm text-gray-700">{item}</span>
                             </div>
                           ))}
                         </div>
@@ -803,7 +805,7 @@ ${requirements}
                         {currentCategory.includes.length > 4 && (
                           <button
                             onClick={() => setShowAllIncludes(!showAllIncludes)}
-                            className="mt-4 text-green-400 hover:text-green-300 font-medium text-sm transition-colors"
+                            className="mt-4 text-violet-500 hover:text-violet-400 font-medium text-sm transition-colors"
                           >
                             {showAllIncludes
                               ? 'Show Less ↑'
@@ -815,18 +817,18 @@ ${requirements}
                       {/* Selected Features */}
 
                       <div className="py-5 space-y-4">
-                        <h4 className="text-sm uppercase tracking-wider text-gray-400">
+                        <h4 className="text-sm uppercase tracking-wider text-gray-900">
                           Selected Features
                         </h4>
 
                         {selectedFeatures.length === 0 ? (
-                          <p className="text-gray-500 text-sm">No extra features selected.</p>
+                          <p className="text-gray-700 text-sm">No extra features selected.</p>
                         ) : (
                           selectedFeatures.map(feature => (
                             <div key={feature.id} className="flex justify-between items-center">
-                              <span className="text-gray-300">{feature.name}</span>
+                              <span className="text-gray-700">{feature.name}</span>
 
-                              <span className="text-green-400 font-medium">
+                              <span className="text-violet-500 font-medium">
                                 ₹{feature.price.toLocaleString()}
                               </span>
                             </div>
@@ -842,7 +844,7 @@ ${requirements}
                               type="checkbox"
                               checked={includeDomain}
                               onChange={() => setIncludeDomain(!includeDomain)}
-                              className="w-4 h-4 accent-green-400 border-gray-300 rounded cursor-pointer"
+                              className="w-4 h-4 accent-violet-500 border-gray-300 rounded cursor-pointer"
                             />
 
                             <span>Domain (.com)</span>
@@ -857,7 +859,7 @@ ${requirements}
                               type="checkbox"
                               checked={includeHosting}
                               onChange={() => setIncludeHosting(!includeHosting)}
-                              className="w-4 h-4 accent-green-400 border-gray-300 rounded cursor-pointer"
+                              className="w-4 h-4 accent-violet-500 border-gray-300 rounded cursor-pointer"
                             />
 
                             <span>Hosting</span>
@@ -875,7 +877,7 @@ ${requirements}
                       <div className="flex justify-between items-center">
                         <span className="text-lg font-semibold">Total Amount</span>
 
-                        <span className="text-2xl sm:text-3xl font-bold text-green-400">
+                        <span className="text-2xl sm:text-3xl font-bold text-violet-500">
                           ₹{totalPrice.toLocaleString()}
                         </span>
                       </div>
@@ -894,7 +896,7 @@ ${requirements}
                               });
                             }, 50);
                           }}
-                          className="flex-1 py-3 rounded-xl border border-zinc-700 hover:border-white transition flex items-center justify-center gap-2"
+                          className="flex-1 py-3 rounded-xl border border-violet-500/40 flex items-center justify-center gap-2"
                         >
                           <ArrowLeft size={18} />
                           Back
@@ -910,7 +912,7 @@ ${requirements}
                               });
                             }, 50);
                           }}
-                          className="flex-1 py-3 rounded-xl bg-green-400 text-black font-semibold hover:scale-105 transition flex items-center justify-center gap-2"
+                          className="flex-1 py-3 rounded-xl bg-violet-500 text-white font-semibold hover:scale-105 transition flex items-center justify-center gap-2"
                         >
                           Continue
                           <ArrowRight size={18} />
@@ -932,69 +934,69 @@ ${requirements}
             >
               <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-10">
                 {/* Left Side - Form */}
-                <div className="lg:col-span-2 bg-zinc-900 border border-zinc-800 rounded-3xl p-4 sm:p-8">
-                  <span className="inline-flex items-center gap-2 border border-green-400/30 text-green-400 px-4 py-2 rounded-full text-sm mb-5">
-                    <FileText size={18} />
+                <div className="lg:col-span-2 bg-white/70 backdrop-blur-xl border border-violet-500/10 rounded-3xl p-4 sm:p-8">
+                  <span className="inline-flex items-center gap-2 border border-black/50 text-black px-4 py-2 rounded-full text-sm mb-5">
+                    <FileText size={18} className='text-violet-500' />
                     Business Details
                   </span>
 
-                  <h2 className="text-2xl sm:text-4xl font-bold text-white">
+                  <h2 className="text-2xl sm:text-4xl font-bold text-black">
                     Tell us about your business
                   </h2>
 
-                  <p className="text-gray-400 mt-3 mb-10">
+                  <p className="text-gray-700 mt-3 mb-10">
                     Fill in your details and we'll contact you with your customized website
                     quotation.
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm text-gray-400 mb-2">Business Name</label>
+                      <label className="block text-sm text-gray-900 mb-2">Business Name</label>
 
                       <input
                         value={business}
                         onChange={e => setBusiness(e.target.value)}
                         placeholder="ABC Restaurant"
-                        className="w-full rounded-xl bg-zinc-800 border border-zinc-700 px-4 py-3 outline-none focus:border-green-400"
+                        className="w-full rounded-xl border border-violet-500/20 bg-white/10 backdrop-blur-xl px-4 py-3 outline-none focus:border-violet-400"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-sm text-gray-400 mb-2">Owner Name</label>
+                      <label className="block text-sm text-gray-900 mb-2">Owner Name</label>
 
                       <input
                         value={name}
                         onChange={e => setName(e.target.value)}
                         placeholder="Name"
-                        className="w-full rounded-xl bg-zinc-800 border border-zinc-700 px-4 py-3 outline-none focus:border-green-400"
+                        className="w-full rounded-xl border border-violet-500/20 bg-white/10 backdrop-blur-xl px-4 py-3 outline-none  focus:border-violet-400"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-sm text-gray-400 mb-2">Phone Number</label>
+                      <label className="block text-sm text-gray-900 mb-2">Phone Number</label>
 
                       <input
                         value={phone}
                         onChange={e => setPhone(e.target.value)}
                         placeholder="+91"
-                        className="w-full rounded-xl bg-zinc-800 border border-zinc-700 px-4 py-3 outline-none focus:border-green-400"
+                        className="w-full rounded-xl border border-violet-500/20 bg-white/10 backdrop-blur-xl px-4 py-3 outline-none  focus:border-violet-400"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-sm text-gray-400 mb-2">Email Address</label>
+                      <label className="block text-sm text-gray-900 mb-2">Email Address</label>
 
                       <input
                         value={email}
                         onChange={e => setEmail(e.target.value)}
                         placeholder="abc@gmail.com"
-                        className="w-full rounded-xl bg-zinc-800 border border-zinc-700 px-4 py-3 outline-none focus:border-green-400"
+                        className="w-full rounded-xl border border-violet-500/20 bg-white/10 backdrop-blur-xl px-4 py-3 outline-none  focus:border-violet-400"
                       />
                     </div>
                   </div>
 
                   <div className="mt-6">
-                    <label className="block text-sm text-gray-400 mb-2">
+                    <label className="block text-sm text-gray-900 mb-2">
                       Additional Requirements
                     </label>
 
@@ -1003,7 +1005,7 @@ ${requirements}
                       value={requirements}
                       onChange={e => setRequirements(e.target.value)}
                       placeholder="Describe your requirements..."
-                      className="w-full rounded-xl bg-zinc-800 border border-zinc-700 px-4 py-3 outline-none focus:border-green-400 resize-none"
+                      className="w-full rounded-xl border border-violet-500/20 bg-white/10 backdrop-blur-xl px-4 py-3 outline-none focus:border-violet-400 resize-none"
                     />
                   </div>
 
@@ -1018,14 +1020,14 @@ ${requirements}
                           });
                         }, 50);
                       }}
-                      className="flex-1 py-4 rounded-xl border border-zinc-700 hover:border-white transition"
+                      className="flex-1 py-4 rounded-xl border border-violet-500"
                     >
                       ← Back
                     </button>
 
                     <button
                       onClick={handleSubmit}
-                      className="flex-1 py-4 rounded-xl bg-green-400 text-black font-semibold hover:scale-105 transition"
+                      className="flex-1 py-4 rounded-xl bg-violet-500 text-white font-semibold hover:scale-105 transition"
                     >
                       Submit Inquiry
                     </button>
@@ -1034,29 +1036,29 @@ ${requirements}
 
                 {/* Right Side Summary */}
 
-                <div className="sticky top-24 h-fit bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <div className="sticky top-24 h-fit bg-white/70 backdrop-blur-xl border border-violet-500/10 rounded-3xl p-6">
                   <h3 className="text-2xl font-bold mb-6">Order Summary</h3>
 
                   <div className="flex justify-between mb-4">
-                    <span className="text-gray-400">Category</span>
+                    <span className="text-gray-700">Category</span>
                     <span>{selectedCategory}</span>
                   </div>
 
                   <div className="flex justify-between mb-4">
-                    <span className="text-gray-400">Base Price</span>
+                    <span className="text-gray-700">Base Price</span>
                     <span>₹{currentCategory.basePrice.toLocaleString()}</span>
                   </div>
 
                   <div className="border-t border-zinc-800 my-4"></div>
 
-                  <h4 className="text-gray-400 mb-3">Selected Features</h4>
+                  <h4 className="text-gray-900 mb-3">Selected Features</h4>
 
                   <div className="space-y-2">
                     {selectedFeatures.map(feature => (
                       <div key={feature.id} className="flex justify-between text-sm">
                         <span>{feature.name}</span>
 
-                        <span className="text-green-400">₹{feature.price}</span>
+                        <span className="text-violet-500">₹{feature.price}</span>
                       </div>
                     ))}
                   </div>
@@ -1066,7 +1068,7 @@ ${requirements}
                   <div className="flex justify-between items-center">
                     <span className="text-xl font-semibold">Total</span>
 
-                    <span className="text-3xl font-bold text-green-400">
+                    <span className="text-3xl font-bold text-violet-500">
                       ₹{totalPrice.toLocaleString()}
                     </span>
                   </div>

@@ -35,7 +35,7 @@ export default function Testimonials() {
           </div>
 
           {/* Testimonial card */}
-          <div className="group relative text-black overflow-hidden rounded-2xl border border-violet-500/20 bg-white/[0.08] backdrop-blur-2xl p-6 sm:p-8 max-w-md transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40 hover:shadow-[0_20px_60px_rgba(168,85,247,0.25)]">
+          <div className="group relative text-black overflow-hidden rounded-2xl border border-violet-500/10 bg-white/[0.08] backdrop-blur-2xl p-6 sm:p-8 max-w-md transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40 hover:shadow-[0_20px_60px_rgba(168,85,247,0.25)]">
             <span className="text-xs  block mb-2">AUTODESK</span>
 
             <p className="text-sm  mb-6">
