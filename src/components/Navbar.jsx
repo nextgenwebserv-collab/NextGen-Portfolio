@@ -46,7 +46,7 @@ export default function Navbar() {
 
     ${
       scrolled
-        ? 'max-w-6xl rounded-full bg-white/80 backdrop-blur-3xl shadow-md border border-black/10 scale-[0.98]'
+        ? 'max-w-5xl rounded-full bg-white/80 backdrop-blur-3xl shadow-md border border-black/10 scale-[0.98]'
         : 'max-w-7xl bg-white/80 border-b border-black/10 rounded-none scale-100'
     }
   `}
