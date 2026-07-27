@@ -43,8 +43,7 @@ export default function Contact() {
   return (
     <section id="about" className="relative py-18 sm:py-24 overflow-hidden">
       {/* Gradient background */}
-      <div className="absolute -top-0 -left-10 w-96 h-96 bg-green-300 rounded-full blur-3xl opacity-60"></div>
-      <div className="absolute top-80 right-0 w-96 h-96 bg-lime-300 rounded-full blur-3xl opacity-60"></div>
+      <div className="absolute top-40 left-1/2 -translate-x-1/2 w-60 sm:w-96 h-60 sm:h-96 bg-violet-500/60 rounded-full blur-[100px] opacity-80"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-16">
         <span className="inline-flex items-center gap-2 border border-black/20 px-4 py-2 rounded-full text-sm mb-6 bg-white">
@@ -71,14 +70,17 @@ export default function Contact() {
             </div>
           </div>
           {/* Contact Card */}
-          <div className="bg-black text-white rounded-2xl p-6 sm:p-10 max-w-md w-full">
-            <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
+          <div className="group relative overflow-hidden rounded-2xl border border-violet-500/40 bg-white/[0.08] backdrop-blur-2xl p-6 sm:p-10 max-w-md w-full transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40 hover:shadow-[0_20px_60px_rgba(168,85,247,0.25)]">
+            {/* Purple Glow */}
+            <div className="absolute -top-20 -right-20 w-60 h-60 bg-violet-500/30 rounded-full blur-[90px] group-hover:bg-violet-500/50 transition-all duration-500"></div>
+
+            <form ref={formRef} onSubmit={sendEmail} className="relative space-y-4">
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
                 required
-                className="w-full rounded-lg px-4 py-3 text-black outline-none bg-white"
+                className="w-full rounded-xl px-4 py-3 text-black outline-none bg-white/90 backdrop-blur-md border border-white/20 focus:ring-2 focus:ring-violet-400 transition"
               />
 
               <input
@@ -86,7 +88,7 @@ export default function Contact() {
                 name="email"
                 placeholder="Your Email"
                 required
-                className="w-full rounded-lg px-4 py-3 text-black outline-none bg-white"
+                className="w-full rounded-xl px-4 py-3 text-black outline-none bg-white/90 backdrop-blur-md border border-white/20 focus:ring-2 focus:ring-violet-400 transition"
               />
 
               <textarea
@@ -94,13 +96,13 @@ export default function Contact() {
                 rows={4}
                 placeholder="Tell us about your project"
                 required
-                className="w-full rounded-lg px-4 py-3 text-black outline-none resize-none bg-white"
+                className="w-full rounded-xl px-4 py-3 text-black outline-none resize-none bg-white/90 backdrop-blur-md border border-white/20 focus:ring-2 focus:ring-violet-400 transition"
               />
 
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-white text-black font-semibold py-3 rounded-lg hover:bg-gray-100 transition disabled:opacity-60"
+                className="w-full bg-gradient-to-r from-violet-500 to-purple-600 text-white font-semibold py-3 rounded-xl hover:scale-[1.02] transition-all duration-300 shadow-lg shadow-violet-500/30 disabled:opacity-60"
               >
                 {loading ? 'Sending...' : 'Send Message'}
               </button>

@@ -1,11 +1,11 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-icons/fa';
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 pt-10 sm:pt-16 ">
+    <footer className="bg-white text-black pt-10 sm:pt-16 ">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <img src="/Logo2.png" alt="Logo" className="mb-5 w-44" />
+          <img src="/file.png" alt="Logo" className="mb-5 w-44" />
           <p className="text-sm leading-relaxed">
             Building high-performance digital experiences for modern brands. NextGen is your trusted
             partner for strategy, design, and development.
