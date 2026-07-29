@@ -7,8 +7,8 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto relative overflow-hidden rounded-[32px]">
         {/* Background Glow */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/2 top-10 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/30 blur-[180px]" />
-
+          <div className="absolute left-1/2 top-10 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/20 blur-[180px]" />
+          <div className="sm:hidden absolute left-1/2 top-200 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/20 blur-[180px]" />
         </div>
 
         {/* Glass Container */}
@@ -16,7 +16,7 @@ export default function Skills() {
           {/* Header */}
           <div className="flex flex-col lg:flex-row justify-between gap-10 mb-14">
             <div>
-              <button className="px-5 py-2 rounded-full border border-black/20 bg-white/20 backdrop-blur-md text-black font-medium mb-6">
+              <button className="px-5 py-2 rounded-full border border-black/20 bg-white/20 backdrop-blur-md text-black text-sm mb-6">
                 Why Choose Me
               </button>
 
@@ -39,25 +39,25 @@ export default function Skills() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <SkillCard
               title="HTML & CSS"
-              icon={<FaHtml5 />}
+              icon={<FaHtml5 size={22} />}
               details="We craft pixel-perfect, responsive interfaces that give startups a strong and professional first impression."
             />
 
             <SkillCard
               title="JavaScript"
-              icon={<FaJs />}
+              icon={<FaJs size={22} />}
               details="We power interactions and functionality that keep users engaged and experiences smooth."
             />
 
             <SkillCard
               title="React"
-              icon={<FaReact />}
+              icon={<FaReact size={22} />}
               details="We build scalable, component-driven frontends designed to grow with your product."
             />
 
             <SkillCard
               title="Next.js"
-              icon={<SiNextdotjs />}
+              icon={<SiNextdotjs size={22} />}
               details="We develop fast, SEO-optimized, production-ready applications built for performance and scale."
             />
           </div>
@@ -74,7 +74,7 @@ function SkillCard({ title, icon, details }) {
       <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-violet-500/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
       {/* Icon */}
-      <div className="relative mb-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-violet-500/20 bg-white/10 backdrop-blur-xl text-3xl text-violet-600">
+      <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-lg">
         {icon}
       </div>
 

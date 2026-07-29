@@ -43,7 +43,7 @@ export default function Contact() {
   return (
     <section id="about" className="relative py-18 sm:py-24 overflow-hidden">
       {/* Gradient background */}
-      <div className="absolute top-40 left-1/2 -translate-x-1/2 w-60 sm:w-96 h-60 sm:h-96 bg-violet-500/60 rounded-full blur-[100px] opacity-80"></div>
+      <div className="absolute top-50  left-20 sm:left-80 -translate-x-1/2 w-60 sm:w-96 h-60 sm:h-96 bg-violet-500/60 rounded-full blur-[100px] opacity-80"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-16">
         <span className="inline-flex items-center gap-2 border border-black/20 px-4 py-2 rounded-full text-sm mb-6 bg-white">
@@ -72,7 +72,7 @@ export default function Contact() {
           {/* Contact Card */}
           <div className="group relative overflow-hidden rounded-2xl border border-violet-500/40 bg-white/[0.08] backdrop-blur-2xl p-6 sm:p-10 max-w-md w-full transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40 hover:shadow-[0_20px_60px_rgba(168,85,247,0.25)]">
             {/* Purple Glow */}
-            <div className="absolute -top-20 -right-20 w-60 h-60 bg-violet-500/30 rounded-full blur-[90px] group-hover:bg-violet-500/50 transition-all duration-500"></div>
+            <div className="absolute top-60 sm:-top-20 -right-20 w-60 h-60 bg-violet-500/30 rounded-full blur-[90px] group-hover:bg-violet-500/50 transition-all duration-500"></div>
 
             <form ref={formRef} onSubmit={sendEmail} className="relative space-y-4">
               <input

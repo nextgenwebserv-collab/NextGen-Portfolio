@@ -555,12 +555,11 @@ ${requirements}
     );
   };
   return (
-    <section className="px-4 sm:px-8 pt-20 text-black bo" ref={sectionRef}>
-
+    <section className="px-4 sm:px-8 pt-20 text-black" ref={sectionRef}>
       <div className="max-w-7xl mx-auto rounded-[32px] border border-violet-500/10 bg-white/40 backdrop-blur-xl p-6 sm:p-16 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/2 top-10 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/30 blur-[180px]" />
-
+          <div className="absolute left-1/2 top-10 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/10 blur-[180px]" />
+          <div className="sm:hidden absolute left-1/2 top-200 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/10 blur-[180px]" />
         </div>
         <AnimatePresence mode="wait">
           {step === 1 && (
@@ -572,7 +571,7 @@ ${requirements}
               transition={{ duration: 0.45 }}
             >
               <div className="text-center">
-                <span className="inline-flex items-center gap-2 border border-white/20 px-4 py-2 rounded-full text-sm mb-6">
+                <span className="inline-flex items-center gap-2 border border-violet-500/20 px-4 py-2 rounded-full text-sm mb-6">
                   <Rocket size={20} />
                   Choose Your Business Category
                 </span>
@@ -594,10 +593,7 @@ ${requirements}
                       onClick={() => setSelectedCategory(item.name)}
                       className={`relative rounded-2xl border p-4 sm:p-5 transition-all duration-300
 
-                      ${selectedCategory === item.name
-                          ? '0 border border-violet-500/20 bg-white/50 backdrop-blur-xl shadow-xl shadow-violet-500/30 scale-105'
-                          : ' border border-violet-500/20 bg-white/50 backdrop-blur-xl hover:border-violet-500 hover:-translate-y-2'
-                        }`}
+                      ${selectedCategory === item.name ? '0 border border-violet-500/20 bg-white/50 backdrop-blur-xl shadow-xl shadow-violet-500/30 scale-105' : ' border border-violet-500/20 bg-white/50 backdrop-blur-xl hover:border-violet-500 hover:-translate-y-2'}`}
                     >
                       {selectedCategory === item.name && (
                         <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-violet-500 flex items-center justify-center text-white">
@@ -730,10 +726,7 @@ ${requirements}
                               setSelectedFeatures(prev => [...prev, feature]);
                             }
                           }}
-                          className={`relative rounded-2xl border p-4 text-left transition-all duration-300 ${active
-                              ? 'border-violet-500/20 bg-white/70 backdrop-blur-xl shadow-lg shadow-green-400/20'
-                              : 'border-violet-500/20 bg-white/70 backdrop-blur-xl hover:border-violet-500/20 hover:-translate-y-1'
-                            }`}
+                          className={`relative rounded-2xl border p-4 text-left transition-all duration-300 ${active ? 'border-violet-500/20 bg-white/70 backdrop-blur-xl shadow-lg shadow-green-400/20' : 'border-violet-500/20 bg-white/70 backdrop-blur-xl hover:border-violet-500/20 hover:-translate-y-1'}`}
                         >
                           {active && (
                             <div className="absolute top-3 right-3 h-6 w-6 rounded-full bg-violet-500 text-white flex items-center justify-center">
@@ -744,10 +737,7 @@ ${requirements}
                           <div className="flex items-center gap-3">
                             {/* Icon */}
                             <div
-                              className={`sm:w-11 sm:h-11 w-8 h-8 rounded-xl flex items-center justify-center transition-all ${active
-                                  ? 'bg-violet-500 text-white'
-                                  : 'bg-violet-500/10 text-violet-400'
-                                }`}
+                              className={`sm:w-11 sm:h-11 w-8 h-8 rounded-xl flex items-center justify-center transition-all ${active ? 'bg-violet-500 text-white' : 'bg-violet-500/10 text-violet-400'}`}
                             >
                               <Icon className="sm:w-6 sm:h-6 w-5 h-5" />
                             </div>
@@ -936,7 +926,7 @@ ${requirements}
                 {/* Left Side - Form */}
                 <div className="lg:col-span-2 bg-white/70 backdrop-blur-xl border border-violet-500/10 rounded-3xl p-4 sm:p-8">
                   <span className="inline-flex items-center gap-2 border border-black/50 text-black px-4 py-2 rounded-full text-sm mb-5">
-                    <FileText size={18} className='text-violet-500' />
+                    <FileText size={18} className="text-violet-500" />
                     Business Details
                   </span>
 

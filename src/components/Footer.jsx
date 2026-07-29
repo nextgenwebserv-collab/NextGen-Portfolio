@@ -1,8 +1,9 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-icons/fa';
+
 export default function Footer() {
   return (
     <footer className="bg-white text-black pt-10 sm:pt-16 ">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
         {/* Brand */}
         <div>
           <img src="/file.png" alt="Logo" className="mb-5 w-44" />
@@ -16,11 +17,11 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">Home</li>
-            <li className="hover:text-white cursor-pointer">
+            <li className="hover:text-violet-500 cursor-pointer">Home</li>
+            <li className="hover:text-violet-500 cursor-pointer">
               <a href="#about">About</a>
             </li>
-            <li className="hover:text-white cursor-pointer">Portfolio</li>
+            <li className="hover:text-violet-500 cursor-pointer">Portfolio</li>
           </ul>
         </div>
 
@@ -39,17 +40,17 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Connect</h3>
           <div className="mb-4 flex items-center gap-2">
             <FaPhone size={18} className="rotate-90 " />
-            <a href="tel:9304729992" className="text-sm hover:text-white">
+            <a href="tel:9304729992" className="text-sm hover:text-violet-500">
               (+91) 9304729992,
             </a>
-            <a href="tel:8340593996" className="text-sm hover:text-white">
+            <a href="tel:8340593996" className="text-sm hover:text-violet-500">
               8340593996
             </a>
           </div>
 
           <div className="mb-4 flex items-center gap-2">
             <FaEnvelope size={20} />
-            <a href="mailto:nextgenwebservices@gmail.com" className="text-sm hover:text-white">
+            <a href="mailto:nextgenwebservices@gmail.com" className="text-sm hover:text-violet-500">
               nextgenwebservices@gmail.com
             </a>
           </div>

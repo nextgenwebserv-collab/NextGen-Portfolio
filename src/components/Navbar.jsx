@@ -32,23 +32,20 @@ export default function Navbar() {
       className={`
     w-full z-50
     md:fixed md:top-0 md:left-0
-    transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]
-    ${scrolled ? 'md:pt-3 py-0' : 'py-0'}
+    transition-[padding]
+    duration-500
+    ease-out
+    ${scrolled ? 'md:pt-3' : 'pt-0'}
   `}
     >
       <div
-        className={`
-    mx-auto flex items-center justify-between
-    px-5 py-2
-    transition-all duration-700
+        className={`mx-auto flex items-center justify-between
+    px-5 py-2 will-change-[max-width,border-radius]
+    transition-[max-width,border-radius,background-color,box-shadow,backdrop-filter]
+    duration-500
     ease-[cubic-bezier(0.22,1,0.36,1)]
-    transform
 
-    ${
-      scrolled
-        ? 'max-w-5xl rounded-full bg-white/50 backdrop-blur-xl shadow-sm border border-black/10 scale-[0.98]'
-        : 'w-full bg-white/80 border-b border-black/5 rounded-none scale-100'
-    }
+    ${scrolled ? 'max-w-5xl rounded-full bg-white/60 backdrop-blur-xl shadow-sm border border-black/10' : 'max-w-7xl rounded-none bg-white/80 border-b border-white/20 '}
   `}
       >
         {/* Logo */}
@@ -58,13 +55,13 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <nav className="hidden md:flex items-center gap-10 text-md font-medium">
-          <a href="#" className="hover:text-gray-500">
+          <a href="#" className="hover:text-violet-500">
             Home
           </a>
-          <a href="#about" className="hover:text-gray-500">
+          <a href="#about" className="hover:text-violet-500">
             About
           </a>
-          <a href="#" className="hover:text-gray-500">
+          <a href="#" className="hover:text-violet-500">
             Portfolio
           </a>
         </nav>
@@ -74,10 +71,10 @@ export default function Navbar() {
           href="https://wa.me/+918340593996?text=Hello%20I%20want%20to%20start%20a%20project"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 border border-black px-3 sm:px-5 py-2 rounded-full text-md hover:bg-black hover:text-white transition"
+          className="group flex items-center gap-2 border border-black px-3 sm:px-5 py-2 rounded-full text-md transition-all duration-300 hover:bg-violet-500 hover:text-white hover:border-violet-500"
         >
           Start Project
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-black">
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-current transition-transform duration-300 group-hover:translate-x-1">
             <ArrowRight size={18} />
           </span>
         </a>
