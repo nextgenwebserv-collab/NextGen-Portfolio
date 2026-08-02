@@ -43,7 +43,15 @@ export default function Projects() {
               image="/Capture.png"
               link="https://shopu-nu.vercel.app/"
             />
-
+            <ProjectCard
+              title="Bengal Tiger"
+              subtitle="Travel & Tourism Platform"
+              details="Bengal Tiger is a modern travel platform designed to showcase unforgettable journeys across India's wildlife, nature, and cultural destinations. It offers curated tour packages, destination exploration, and a seamless travel experience."
+              tags={['web development', 'travel & tourism']}
+              rotate="-rotate-6"
+              image="/Travel.PNG"
+              link="https://bengal-tan.vercel.app/"
+            />
             <ProjectCard
               title="CareOne"
               subtitle="Hospital Management System"

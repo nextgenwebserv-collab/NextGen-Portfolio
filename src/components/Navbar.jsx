@@ -61,8 +61,8 @@ export default function Navbar() {
           <a href="#about" className="hover:text-violet-500">
             About
           </a>
-          <a href="#" className="hover:text-violet-500">
-            Portfolio
+          <a href="#contact" className="hover:text-violet-500">
+            Contact
           </a>
         </nav>
 

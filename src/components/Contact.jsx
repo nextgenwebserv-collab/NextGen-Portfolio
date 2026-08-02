@@ -41,7 +41,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="about" className="relative py-18 sm:py-24 overflow-hidden">
+    <section id="contact" className="relative py-18 sm:py-24 overflow-hidden">
       {/* Gradient background */}
       <div className="absolute top-50  left-20 sm:left-80 -translate-x-1/2 w-60 sm:w-96 h-60 sm:h-96 bg-violet-500/60 rounded-full blur-[100px] opacity-80"></div>
 
