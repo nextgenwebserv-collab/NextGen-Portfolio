@@ -10,7 +10,7 @@ const projects = [
     details:
       'Medicare Pro is a modern healthcare platform designed to provide a seamless digital experience for patients and healthcare providers. It focuses on easy access to medical services, healthcare information, and efficient patient management.',
     tags: ['Healthcare'],
-    image: '/Medicare.png',
+    image: '/Medicare.jpg',
     link: 'https://medicare-demo03.vercel.app/',
   },
   {
