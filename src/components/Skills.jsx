@@ -1,13 +1,39 @@
 import { FaHtml5, FaJs, FaReact } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Skills() {
+  const [visible, setVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: '-45% 0px -45% 0px',
+        threshold: 0,
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="px-2 sm:px-6 ">
+    <section ref={sectionRef} className="px-2 sm:px-6">
       <div className="max-w-7xl mx-auto relative overflow-hidden rounded-[32px]">
         {/* Background Glow */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute left-1/2 top-10 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/20 blur-[180px]" />
+
           <div className="sm:hidden absolute left-1/2 top-200 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-violet-500/20 blur-[180px]" />
         </div>
 
@@ -41,24 +67,32 @@ export default function Skills() {
               title="HTML & CSS"
               icon={<FaHtml5 size={22} />}
               details="We craft pixel-perfect, responsive interfaces that give startups a strong and professional first impression."
+              visible={visible}
+              delay="0ms"
             />
 
             <SkillCard
               title="JavaScript"
               icon={<FaJs size={22} />}
               details="We power interactions and functionality that keep users engaged and experiences smooth."
+              visible={visible}
+              delay="150ms"
             />
 
             <SkillCard
               title="React"
               icon={<FaReact size={22} />}
               details="We build scalable, component-driven frontends designed to grow with your product."
+              visible={visible}
+              delay="300ms"
             />
 
             <SkillCard
               title="Next.js"
               icon={<SiNextdotjs size={22} />}
               details="We develop fast, SEO-optimized, production-ready applications built for performance and scale."
+              visible={visible}
+              delay="450ms"
             />
           </div>
         </div>
@@ -67,9 +101,22 @@ export default function Skills() {
   );
 }
 
-function SkillCard({ title, icon, details }) {
+function SkillCard({ title, icon, details, visible, delay }) {
   return (
-    <div className="group relative overflow-hidden rounded-3xl border bg-white/40 backdrop-blur-xl p-7 border-violet-500/10 transition-all duration-500 hover:-translate-y-3 hover:border-violet-400/40 hover:shadow-[0_20px_60px_rgba(168,85,247,0.18)]">
+    <div
+      style={{ transitionDelay: delay }}
+      className={`
+        group relative overflow-hidden rounded-3xl border
+        bg-white/40 backdrop-blur-xl p-7
+        border-violet-500/10
+        transition-all duration-700 ease-out
+        hover:-translate-y-3
+        hover:border-violet-400/40
+        hover:shadow-[0_20px_60px_rgba(168,85,247,0.18)]
+
+        ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}
+      `}
+    >
       {/* Hover Glow */}
       <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-violet-500/20 blur-3xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
