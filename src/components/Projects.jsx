@@ -39,23 +39,23 @@ const projects = [
     link: 'https://resturent-demo01.vercel.app/',
   },
 
-  {
-    title: 'CareOne',
-    details:
-      'CareOne is a comprehensive hospital management system designed to streamline operations, improve patient care, and enhance administrative efficiency.',
-    tags: ['Hospital Management System'],
-    image: '/Careone.png',
-    link: 'https://careone.com',
-  },
   // {
-  //   title: 'Medicare Pro',
-  //   subtitle: 'Healthcare & Medical Platform',
+  //   title: 'CareOne',
   //   details:
-  //     'Medicare Pro is a modern healthcare platform designed to provide a seamless digital experience for patients and healthcare providers. It focuses on easy access to medical services, healthcare information, and efficient patient management.',
-  //   tags: ['Healthcare'],
-  //   image: '/MedicarePro.png',
-  //   link: 'https://medicarepro-demo04.vercel.app/',
+  //     'CareOne is a comprehensive hospital management system designed to streamline operations, improve patient care, and enhance administrative efficiency.',
+  //   tags: ['Hospital Management System'],
+  //   image: '/Careone.png',
+  //   link: 'https://careone.com',
   // },
+  {
+    title: 'Medicare Pro',
+    subtitle: 'Healthcare & Medical Platform',
+    details:
+      'Medicare Pro is a modern healthcare platform designed to provide a seamless digital experience for patients and healthcare providers. It focuses on easy access to medical services, healthcare information, and efficient patient management.',
+    tags: ['Healthcare'],
+    image: '/MedicarePro.png',
+    link: 'https://medicarepro-demo04.vercel.app/',
+  },
   {
     title: 'RealEstate Hub',
 
