@@ -47,22 +47,26 @@ const projects = [
     image: '/Careone.png',
     link: 'https://careone.com',
   },
+  // {
+  //   title: 'Medicare Pro',
+  //   subtitle: 'Healthcare & Medical Platform',
+  //   details:
+  //     'Medicare Pro is a modern healthcare platform designed to provide a seamless digital experience for patients and healthcare providers. It focuses on easy access to medical services, healthcare information, and efficient patient management.',
+  //   tags: ['Healthcare'],
+  //   image: '/MedicarePro.png',
+  //   link: 'https://medicarepro-demo04.vercel.app/',
+  // },
   {
-    title: 'Medicare Pro',
-    subtitle: 'Healthcare & Medical Platform',
+    title: 'RealEstate Hub',
+
     details:
-      'Medicare Pro is a modern healthcare platform designed to provide a seamless digital experience for patients and healthcare providers. It focuses on easy access to medical services, healthcare information, and efficient patient management.',
-    tags: ['Healthcare'],
-    image: '/MedicarePro.png',
-    link: 'https://medicarepro-demo04.vercel.app/',
-  },
-  {
-    title: 'SchooLama',
-    details:
-      'A School Management ERP is a software system designed to manage and automate all the daily operations of a school, including student records, attendance, fee management, examinations, and staff details in a single platform.',
-    tags: ['ERP Software'],
-    image: '/Lama.png',
-    link: 'https://erp-iota-five.vercel.app/admin',
+      'A modern real estate platform designed to help users discover, compare, and manage property listings for buying and renting. It includes property search, advanced filters, property details, favorites, comparisons, and an easy-to-use interface for finding the right property.',
+
+    tags: ['Real Estate Platform'],
+
+    image: '/Real.png',
+
+    link: 'https://real-estate-demo05.vercel.app/',
   },
   {
     title: 'Bengal Tiger',
