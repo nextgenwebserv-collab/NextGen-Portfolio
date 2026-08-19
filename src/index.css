@@ -10,3 +10,17 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+@theme {
+  --animate-loading: loading 3s ease-in-out forwards;
+
+  @keyframes loading {
+    from {
+      transform: scaleX(0);
+    }
+
+    to {
+      transform: scaleX(1);
+    }
+  }
+}
