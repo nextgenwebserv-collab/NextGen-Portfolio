@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import Hero from "../components/Hero.jsx";
 import Skills from "../components/Skills.jsx";
 import WorkProcess from "../components/WorkProcess.jsx";
-import WebsiteConfigurator from "../components/WebsiteConfigurator.jsx";
+// import WebsiteConfigurator from "../components/WebsiteConfigurator.jsx";
 import Testimonials from "../components/Testimonials.jsx";
 import Projects from "../components/Projects.jsx";
 import Footer from "../components/Footer.jsx";
@@ -62,7 +62,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Skills />
-      <WebsiteConfigurator />
+      {/* <WebsiteConfigurator /> */}
       <Testimonials />
       <WorkProcess />
       <About />
