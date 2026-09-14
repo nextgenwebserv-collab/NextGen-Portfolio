@@ -38,7 +38,14 @@ const projects = [
     image: '/Resturant.png',
     link: 'https://resturent-demo01.vercel.app/',
   },
-
+  {
+    title: 'EduSphere',
+    details:
+      'EduSphere is a powerful and feature-packed learning platform with a clean, modern interface, designed to deliver seamless learning experiences across all devices.',
+    tags: ['Learning Platform'],
+    image: '/edusphere.png',
+    link: 'https://edusphere-lms-demo03.vercel.app/',
+  },
   // {
   //   title: 'CareOne',
   //   details:
