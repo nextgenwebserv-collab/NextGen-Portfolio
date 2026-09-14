@@ -65,14 +65,11 @@ const projects = [
   },
   {
     title: 'RealEstate Hub',
-
     details:
       'A modern real estate platform designed to help users discover, compare, and manage property listings for buying and renting. It includes property search, advanced filters, property details, favorites, comparisons, and an easy-to-use interface for finding the right property.',
 
     tags: ['Real Estate Platform'],
-
     image: '/Real.png',
-
     link: 'https://real-estate-demo05.vercel.app/',
   },
   {
